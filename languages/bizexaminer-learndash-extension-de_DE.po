@@ -1,0 +1,1467 @@
+# Copyright (C) 2022 bizDevelop
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: bizExaminer LearnDash Extension 0.3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bizexaminer-"
+"learndash-extension\n"
+"POT-Creation-Date: 2024-05-10T09:35:50+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. Plugin Name of the plugin
+#: bizexaminer-learndash-extension.php
+msgid "bizExaminer LearnDash Extension"
+msgstr "bizExaminer LearnDash Erweiterung"
+
+#. Plugin URI of the plugin
+#: bizexaminer-learndash-extension.php
+msgid "https://www.bizexaminer.com/"
+msgstr "https://www.bizexaminer.com/de"
+
+#. Description of the plugin
+#: bizexaminer-learndash-extension.php
+msgid "An extension for LearnDash to connect with bizExaminer"
+msgstr "Eine Erweiterung für LearnDash um bizExaminer zu integrieren"
+
+#. Author of the plugin
+#: bizexaminer-learndash-extension.php
+msgid "bizDevelop"
+msgstr "bizDevelop"
+
+#: lib/Api/ApiClient.php:419 lib/Api/ApiClient.php:449
+msgid "The API keys for bizExaminer are invalid."
+msgstr "Die API Zugangsdaten für bizExaminer sind ungültig."
+
+#: lib/Api/ApiClient.php:426
+msgid ""
+"The data sent to bizExaminer was invalid and the exam could not be started."
+msgstr ""
+"Die Daten für bizExaminer waren ungültig und die Prüfung konnte nicht "
+"gestartet werden."
+
+#: lib/Api/ApiClient.php:436
+msgid "bizExaminer returned an invalid value."
+msgstr "bizExaminer hat ungültige Daten zurückgegeben."
+
+#: lib/Api/ApiClient.php:456
+msgid "The bizExaminer could not be found at the specified URL."
+msgstr ""
+"bizExaminer konnte unter der URL der API Zugangsdaten nicht erreicht werden."
+
+#: lib/Api/ApiClient.php:468
+msgid "bizExaminer could not handle the request."
+msgstr "bizExaminer konnte die Anfrage nicht abarbeiten."
+
+#: lib/Api/ApiResult.php:101
+msgid "Error parsing JSON response."
+msgstr "Fehler beim lesen der JSON Antwort."
+
+#. translators: %1$s: exam name, %2$s: exam module id
+#: lib/Api/ExamModulesService.php:74
+msgctxt "exam module content revision name"
+msgid "%1$s Revision #%2$s"
+msgstr "%1$s Revision #%2$s"
+
+#: lib/Core/LearnDashLogger.php:16
+msgctxt "logger instance name"
+msgid "bizExaminer"
+msgstr "bizExaminer"
+
+#: lib/LearnDash/CertificatesService.php:47
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1412
+msgctxt "bizexaminer placeholder certificate"
+msgid "bizExaminer Certificate"
+msgstr "bizExaminer Zertifikat"
+
+#: lib/LearnDash/CertificatesService.php:55
+msgid ""
+"This is a placeholder certificate used by bizExaminer to show users the "
+"bizExaminer certificate.\n"
+"                    <strong>Please do not edit/delete it!</strong>"
+msgstr ""
+"Ein Platzhalter-Zertifikat das von bizExaminer verwendet wird um dem Nutzer "
+"bizExaminer Zertifikate anzuzeigen. \n"
+"                    <strong>Bitte bearbeiten/löschen Sie es nicht!</strong>"
+
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:197
+msgid "Arguments for eventCallback are missing"
+msgstr "Argumente für eventCallback fehlen"
+
+#. translators: %1$s quiz label, %2$s quiz attempt id from request
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:214
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:383
+msgid "No %1$s attempt found for id %2$s"
+msgstr "Keinen %1%s-Antritt mit der ID %2%s gefunden"
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:232
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:402
+msgid "Invalid key for %s attempt."
+msgstr "Ungültiger Schlüssel für %s-Antritt."
+
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:362
+msgid "Arguments for examReturn are missing"
+msgstr "Argumente für examReturn fehlen"
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:417
+msgid "Invalid participant for %s attempt."
+msgstr "Ungültiger Teilnehmer für %s-Antritt."
+
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:495
+msgid "Arguments for importAttempts are missing"
+msgstr "Argumente für importAttempts fehlen"
+
+#: lib/LearnDash/Quiz/CallbackApi/Controller.php:514
+msgid "User is not allowed to run importAttempts"
+msgstr "User ist nicht bereichtigt importAttempts aufzurufen"
+
+#: lib/LearnDash/Quiz/QuizFrontend.php:522
+msgid "Something went wrong. Please try again or contact us."
+msgstr ""
+"Etwas ist schief gelaufen. Bitte probieren Sie es noch einmal oder "
+"kontaktieren Sie uns."
+
+#: lib/LearnDash/Quiz/QuizFrontend.php:529
+msgid "Error details:"
+msgstr "Fehlerdetails:"
+
+#: lib/LearnDash/Quiz/QuizFrontend.php:534
+#: lib/LearnDash/Quiz/QuizService.php:787
+msgid "No results to import."
+msgstr "Keine Ergebnisse zu importieren."
+
+#: lib/LearnDash/Quiz/QuizFrontend.php:718
+msgid ""
+"You have not finished the exam yet or your results are still being manually "
+"reviewed.\n"
+"                        You will find the results in your profile, once "
+"finished."
+msgstr ""
+"Sie haben die Prüfung noch nicht fertig abgeschlossen oder die "
+"Testergebnisse werden noch manuell überprüft.\n"
+"                        Sie finden die Testergebnisse in Ihrem Profil, "
+"sobald sie fertig sind."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:195
+#: lib/LearnDash/Quiz/QuizService.php:400
+#: lib/LearnDash/Quiz/QuizService.php:491
+#: lib/LearnDash/Quiz/QuizService.php:639
+#: lib/LearnDash/Quiz/QuizService.php:703
+msgid "This %s does not have bizExaminer enabled/configure."
+msgstr ""
+"Dieser %s hat die bizExaminer Integration nicht aktiviert/konfiguriert."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:210
+msgid "Starting of this %s is disabled because import attempts are enabled."
+msgstr "%s kann nicht gestartet werden, weil Antritte importiert werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:228
+msgid ""
+"The user is not allowed to start the %s because of missing prerequisites,\n"
+"                        maximum retakes or other restrictions."
+msgstr ""
+"Der User darf den %s aufgrund fehlender Voraussetzungen,\n"
+"                        maximaler Wiederholungen oder anderer "
+"Einschränkungen nicht starten."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:247
+#: lib/LearnDash/Quiz/QuizService.php:521
+#: lib/LearnDash/Quiz/QuizService.php:655
+#: lib/LearnDash/Quiz/QuizService.php:747
+msgid "The credentials configured for this %s are not valid."
+msgstr "Die Zugangsdaten für diesen %s sind ungültig."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:262
+msgid "The exam module configured for this %s is not valid."
+msgstr "Das Exam Modul für diesen %s ist ungültig."
+
+#: lib/LearnDash/Quiz/QuizService.php:277
+#: lib/LearnDash/Quiz/QuizService.php:763
+msgid "Could not create a participant with the API."
+msgstr "Der Teilnehmer konnte nicht via API erstellt werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:297
+#: lib/LearnDash/Quiz/QuizService.php:958
+msgid "Could not store the %s attempt."
+msgstr "Der %s-Antritt konnte nicht gespeichert werden."
+
+#: lib/LearnDash/Quiz/QuizService.php:346
+msgid "Could not create a booking with bizExaminer."
+msgstr "Es konnte keine Buchung/Schedule via API erstellt werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:415
+#: lib/LearnDash/Quiz/QuizService.php:506
+#: lib/LearnDash/Quiz/QuizService.php:592
+msgid "No %s attempt could be found."
+msgstr "Es konnte kein %s-Antritt gefunden werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:440
+#: lib/LearnDash/Quiz/QuizService.php:560
+#: lib/LearnDash/Quiz/QuizService.php:1532
+msgid "Could not store the %s attempt results."
+msgstr "Die %s-Ergebnisse konnten nicht gespeichert werden."
+
+#: lib/LearnDash/Quiz/QuizService.php:540
+msgid "Could not fetch results from the API."
+msgstr "Die Ergebnisse konnten nicht von der API geladen werden."
+
+#: lib/LearnDash/Quiz/QuizService.php:672
+msgid "Could not fetch the direct exam access url from the API."
+msgstr "Die Prüfungs-URL konnten nicht von der API geladen werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:718
+msgid "This %s does not have importing attempts enabled."
+msgstr "%s hat die bizExaminer Integration nicht aktiviert/konfiguriert."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:732
+msgid "The user cannot start this %s."
+msgstr "Der/die NutzerIn darf %s nicht starten."
+
+#: lib/LearnDash/Quiz/QuizService.php:775
+msgid "Could not fetch results to import from the API."
+msgstr "Die Ergebnisse konnten nicht von der API geladen werden."
+
+#: lib/LearnDash/Quiz/QuizService.php:914
+msgid "Could not create an attempt."
+msgstr "Der %s-Antritt konnte nicht gespeichert werden."
+
+#: lib/LearnDash/Quiz/QuizService.php:994
+msgid "Could not store attempt results."
+msgstr "Die %s-Ergebnisse konnten nicht gespeichert werden."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizService.php:1024
+msgid "Could not import the %s attempt results."
+msgstr "Die %s-Ergebnisse konnten nicht gespeichert werden."
+
+#. translators: placeholder: Quiz.
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:56
+msgctxt "placeholder: Quiz"
+msgid "%s bizExaminer Settings"
+msgstr "%s bizExaminer Settings"
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:62
+msgctxt "placeholder: quiz"
+msgid "Connect this %s with a bizExaminer exam"
+msgstr "Verbinden Sie diesen %s mit einem bizExaminer Exam"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:133
+msgid "Disabled. Please use bizExaminer to build your questions."
+msgstr ""
+"Deaktiviert. Bitte verwenden Sie bizExaminer um die Fragen zu erstellen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:234
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:337
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:636
+msgid ""
+"Previously selected API Credentials were deleted, please select another set."
+msgstr ""
+"Die vormals ausgewählten API Zugangsdaten wurden gelöscht, bitte wählen Sie "
+"andere Zugangsdaten."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:288
+msgid "bizExaminer Exam"
+msgstr "bizExaminer Exam"
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:293
+msgid "Enable this option to connect this %s with a bizExaminer exam module"
+msgstr "Verbinden Sie diesen %s mit einem bizExaminer Exam"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:301
+msgid "bizExaminer enabled"
+msgstr "bizExaminer aktiviert"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:308
+msgctxt "api credentials for quiz label"
+msgid "API Credentials"
+msgstr "API Zugangsdaten"
+
+#. translators: %s: Link to Settings Page
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:319
+msgid ""
+"You can configure your API Credentials under\n"
+"                        <a href=\"%s\" target=\"_blank\">Settings > "
+"bizExaminer</a>."
+msgstr ""
+"Sie können die Zugangsdaten unter \n"
+"                        <a href=\"%s\" target=\"_blank\">Einstellungen > "
+"bizExaminer</a> konfigurieren."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:327
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:105
+msgid "Search or select a set of API Credentials to connect to bizExaminer."
+msgstr "Suchen Sie und wählen Sie API Zugangsdaten für bizExaminer aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:340
+msgid "You have to select API credentials"
+msgstr "Sie müssen API Zugangsdaten auswählen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:344
+msgctxt "exam module for quiz label"
+msgid "Exam Module"
+msgstr "Exam Modul"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:347
+msgid ""
+"Select an exam module and a content revision.\n"
+"                        Exam Modules will be reloaded after selecting new "
+"API credentials."
+msgstr ""
+"Wählen Sie ein Exam Modul und eine Inhaltsversion aus.\n"
+"                        Exam Module werden nach dem Auswählen von API "
+"Zugangsdaten neu geladen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:353
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:174
+msgid "Select an exam module"
+msgstr "Wählen Sie ein Exam Modul aus"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:362
+msgid "You have to select an exam module to use."
+msgstr "Sie müssen ein Exam Modul auswählen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:370
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:380
+msgid "Use bizExaminer certificate"
+msgstr "bizExaminer Zertifikat verwenden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:373
+msgid ""
+"Enable this option to show users the certificate you\n"
+"                        designed/configured in bizExaminer instead of the "
+"LearnDash one."
+msgstr ""
+"Aktivieren Sie diese Option, um dem Nutzer das Zertifikat aus bizExaminer "
+"(statt einem LearnDash Zertifikat) anzuzeigen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:387
+msgid "Import attempt & results from attempts started outside of LearnDash"
+msgstr ""
+"Importiere Antritt und Ergebnisse von Antritten die Außerhalb LearnDash "
+"gestartet wurden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:394
+msgid ""
+"Enable this option to sync results from attempts started directly in "
+"bizExaminer back to LearnDash.\n"
+"                        You should add the shortcode with the table or the "
+"button to allow the user to import it somewhere."
+msgstr ""
+"Aktivieren Sie diese Option um Ergebnisse von Antritten die direkt in "
+"bizExaminer gestartet wurden zu LearnDash zurück zu synchronisieren. Sie "
+"sollten den Shortcode für die Tabelle oder Button auf einer Seite für die "
+"Nutzer zugänglich machen, so dass diese den Import starten können."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:403
+msgid "Import attempts"
+msgstr "Antritte importieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:410
+msgid ""
+"Disable starting the Quiz from LearnDash when \"Import attempts\" is enabled"
+msgstr ""
+"Deaktiviere das Starten des Quizzes aus LearnDash heraus, falls \"Antritte "
+"importieren\" aktiviert ist"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:417
+msgid ""
+"If you only want to import attempts from bizExaminer but do not want to "
+"allow users to start attempts in LearnDash, enable this option."
+msgstr ""
+"Diese Option aktivieren, wenn Antritte nur aus bizExaminer importiert werden "
+"sollen, aber Nutzer das Quiz nicht in LearnDash starten sollen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:425
+msgid "Disable starting"
+msgstr "Starten deaktivieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:474
+msgid "Use remote proctoring"
+msgstr "Remote Proctoring verwenden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:477
+msgid "Choose one of your configured remote proctoring services."
+msgstr "Wählen Sie einen konfigurierten Remote Proctoring Service aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:481
+msgid "Search or select a remote proctoring service."
+msgstr "Suchen und wählen Sie einen Remote Proctoring Service aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:494
+msgid "You have to select a remote proctore service to use or select \"no\"."
+msgstr ""
+"Sie müssen einen Remote Proctoring Service oder \"Kein Remote Proctoring\" "
+"auswählen."
+
+#. translators: URL to settings
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:536
+msgid ""
+"bizExaminer requires a valid ISO timezone set.\n"
+"                    Please configure WordPress to use a named timezone under "
+"<a href=\"%s\">Settings > General</a>."
+msgstr ""
+"bizExaminer benötigt eine gültige ISO Zeitzone.\n"
+"                    Bitte wählen sie für WordPress eine gültige, benannte "
+"Zeitzone. Sie können dies unter <a href=\"%s\">Einstellungen > Allgemein</a> "
+"einstellen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:625
+msgid "Please select API credentials to use."
+msgstr "Bitte wählen Sie die zu verwendenden API Zugangsdaten aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:657
+msgid "Please select an exam module to use."
+msgstr "Bitte wählen Sie ein zu verwendendes Exam Modul aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:671
+msgid "Please select a valid exam module."
+msgstr "Bitte wählen Sie ein gültiges Exam Modul aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:689
+msgid "Please select remote proctor to use or select \"no\"."
+msgstr ""
+"Bitte wählen Sie einen Remote Proctoring Service oder \"Kein Remote "
+"Proctoring\" aus."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBox.php:714
+msgid "Please select a valid remote proctor."
+msgstr "Bitte wählen Sie einen gültigen Remote Proctoring Service aus."
+
+#. translators: %s: deleted api credentials id
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:127
+msgid "%s (deleted)"
+msgstr "%s (gelöscht)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:157
+msgid "Search or select an exam module"
+msgstr "Suchen und wählen Sie ein Exam Modul aus"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:217
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1610
+msgid "No remote proctoring."
+msgstr "Kein Remote Proctoring."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:275
+msgctxt "ProctorExam setting label"
+msgid "Session Type"
+msgstr "Session Typ"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:283
+msgctxt "ProctorExam session type"
+msgid "Classroom"
+msgstr "Klassenzimmer"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:288
+msgctxt "ProctorExam session type"
+msgid "Record Review"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:293
+msgctxt "ProctorExam session type"
+msgid "Live Proctoring"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:301
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:311
+msgctxt "ProctorExam setting label"
+msgid "Use mobile camera as additional recording device"
+msgstr "Mobile Kamera verwenden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:319
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:329
+msgctxt "ProctorExam setting label"
+msgid "Do not send participant emails"
+msgstr "Keine Emails an TeilnehmerInnen senden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:337
+msgctxt "ProctorExam setting label"
+msgid "General instructions for the exam"
+msgstr "Allgemeine Anweisungen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:342
+msgctxt "ProctorExam setting help"
+msgid "They are displayed before the student starts the exam."
+msgstr "Diese werden angezeigt, bevor der Teilnehmer die Prüfung startet."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:350
+msgctxt "ProctorExam setting label"
+msgid "Individual information for each student."
+msgstr "Individuelle Informationen für TeilnehmerInnen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:355
+msgctxt "ProctorExam setting help"
+msgid ""
+"A personalized link to start the exam will be appended\n"
+"                        at the bottom using the the text from below.\n"
+"                        Alternatively, the <code>##start_exam##</code>\n"
+"                        placeholder can be used to control positioning of "
+"the link."
+msgstr ""
+"Ein personalisierter Link zum Starten der Prüfung (Text siehe unten) wird am "
+"Ende des Texts eingefügt. Alternativ kann mit <code>##start_exam##</code> "
+"die Position des Links genauer kontrolliert werden."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:366
+msgctxt "ProctorExam setting label"
+msgid "»Start exam« link text"
+msgstr "Text für den »Prüfung starten« Link"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:371
+msgctxt "ProctorExam start exam button text"
+msgid "Start exam"
+msgstr "Starte Exam"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:381
+msgctxt "Examity setting label"
+msgid "ID of the course"
+msgstr "Kurs ID"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:389
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:496
+msgctxt "Examity setting label"
+msgid "Name of the course"
+msgstr "Name des Kurses"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:397
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:504
+msgctxt "Examity setting label"
+msgid "First name of the instructor"
+msgstr "Vorname des/der Instruktor/in"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:405
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:512
+msgctxt "Examity setting label"
+msgid "Last name of the instructor"
+msgstr "Nachname des/der Instruktor/in"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:413
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:520
+msgctxt "Examity setting label"
+msgid "Email address of the instructor"
+msgstr "Email address of the instructor"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:421
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:528
+msgctxt "Examity setting label"
+msgid "Name of the exam"
+msgstr "Name der Prüfung"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:429
+msgctxt "Examity setting label"
+msgid "Session Type"
+msgstr "Session Typ"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:437
+msgctxt "Examity exam level"
+msgid "Live Authentication"
+msgstr "Live Authentifizierung"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:442
+msgctxt "Examity exam level"
+msgid "Automated Proctoring Premium"
+msgstr "Automatisches Proctoring Premium"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:447
+msgctxt "Examity exam level"
+msgid "Record and Review Proctoring"
+msgstr "Record & Review Proctoring"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:452
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:549
+msgctxt "Examity exam level"
+msgid "Live Proctoring"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:457
+msgctxt "Examity exam level"
+msgid "Auto-Authentication"
+msgstr "Auto-Authentifizierung"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:462
+msgctxt "Examity exam level"
+msgid "Automated Proctoring Standard"
+msgstr "Automatisches Proctoring Standard"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:470
+msgctxt "Examity setting label"
+msgid "Instructions for the student"
+msgstr "Anleitung für Studierende"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:478
+msgctxt "Examity setting label"
+msgid "Instructions for the proctor"
+msgstr "Anleitung für Proctoren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:488
+msgctxt "Examity setting label"
+msgid "Code of the course"
+msgstr "Kurs Code"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:536
+msgctxt "Examity setting label"
+msgid "Exam security level"
+msgstr "Exam Sicherheitslevel"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:544
+msgctxt "Examity exam security level"
+msgid "Automated + Audit"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:554
+msgctxt "Examity exam security level"
+msgid "Live Authentication + Audit"
+msgstr "Live Authentifizierung + audit"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:559
+msgctxt "Automated"
+msgid "Live Proctoring"
+msgstr "Automatisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:564
+msgctxt "Examity exam security level"
+msgid "Automated Practice"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:574
+msgctxt "Examus setting label"
+msgid "Constructor UI language"
+msgstr "Constructor Sprache"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:582
+msgctxt "Examus setting label"
+msgid "English"
+msgstr "Englisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:583
+msgctxt "Examus setting label"
+msgid "Russian"
+msgstr "Russisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:584
+msgctxt "Examus setting label"
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:585
+msgctxt "Examus setting label"
+msgid "Italian"
+msgstr "Italienisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:586
+msgctxt "Examus setting label"
+msgid "Arabic"
+msgstr "Arabisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:587
+msgctxt "Examus setting label"
+msgid "French"
+msgstr "Französisch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:591
+msgctxt "Examus setting label"
+msgid "Type"
+msgstr "Typ"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:595
+msgctxt "Examus proctoring"
+msgid "Live Proctoring"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:600
+msgctxt "Examus proctoring"
+msgid "Record and Post Exam Review"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:608
+msgctxt "Examus setting label"
+msgid "Identification"
+msgstr "Identifikation"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:616
+msgctxt "Examus identification"
+msgid "Face"
+msgstr "Gesicht"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:617
+msgctxt "Examus identification"
+msgid "Passport"
+msgstr "Reisepass"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:622
+msgctxt "Examus identification"
+msgid "Face and Passport"
+msgstr "Gesicht und Reisepass"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:630
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:640
+msgctxt "Examus setting label"
+msgid "Use Respondus LockDown Browser"
+msgstr "Respondus LockDown Browser verwenden"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:648
+msgctxt "Examus userAgreementUrl"
+msgid "User agreement URL (optional)"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:658
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:667
+msgctxt "Proctorio setting label"
+msgid "Record video"
+msgstr "Video aufzeichnen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:675
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:684
+msgctxt "Proctorio setting label"
+msgid "Record audio"
+msgstr "Audio aufzeichnen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:692
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:701
+msgctxt "Proctorio setting label"
+msgid "Record screen"
+msgstr "Bildschirm aufzeichnen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:709
+msgctxt "Proctorio setting label"
+msgid "Record room on start"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:714
+msgctxt "Proctorio setting help text"
+msgid "Require the test taker to perform a room scan before starting the exam"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:723
+msgctxt "Proctorio recordRoomStart setting label"
+msgid "Record"
+msgstr "Aufzeichnen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:731
+msgctxt "Proctorio setting label"
+msgid "Verify ID"
+msgstr "ID Überprüfen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:738
+msgctxt "Proctorio verifyIdMode label"
+msgid "no"
+msgstr "Nein"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:743
+msgctxt "Proctorio verifyIdMode label"
+msgid "Automatic ID verification"
+msgstr "Automatische ID Überprüfung"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:748
+msgctxt "Proctorio verifyIdMode label"
+msgid "Live ID verification"
+msgstr "Live ID Überprüfung"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:756
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:765
+msgctxt "Proctorio setting label"
+msgid "Close open tabs"
+msgstr "Schließe offene Tabs"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:773
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:782
+msgctxt "Proctorio setting label"
+msgid "Allow new tabs"
+msgstr "Erlaube neue Tabs"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:790
+msgctxt "Proctorio setting label"
+msgid "Force fullscreen"
+msgstr "Vollbild erzwingen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:797
+msgctxt "Proctorio fullScreenMode label"
+msgid "no"
+msgstr "Nein"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:802
+msgctxt "Proctorio fullscreenMode label"
+msgid "Lenient"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:807
+msgctxt "Proctorio fullscreenMode label"
+msgid "Moderate"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:812
+msgctxt "Proctorio fullscreenMode label"
+msgid "Severe"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:820
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:829
+msgctxt "Proctorio setting label"
+msgid "Disable clipboard"
+msgstr "Zwischenablage deaktivieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:837
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:846
+msgctxt "Proctorio setting label"
+msgid "Disable rightclick"
+msgstr "Rechtsklick deaktivieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:854
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:863
+msgctxt "Proctorio setting label"
+msgid "Disable downloads"
+msgstr "Downloads deaktivieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:871
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:880
+msgctxt "Proctorio setting label"
+msgid "Disable printing"
+msgstr "Drucken deaktivieren"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:890
+msgctxt "Meazure setting label"
+msgid "Type"
+msgstr "Typ"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:894
+msgctxt "Meazure setting label"
+msgid "Live+"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:899
+msgctxt "Meazure setting label"
+msgid "Record+"
+msgstr "Aufzeichnen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:907
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:916
+msgctxt "Meazure setting label"
+msgid "Do not notifiy test taker"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:924
+msgctxt "Meazure setting label"
+msgid "Security preset"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:932
+msgctxt "Meazure setting label"
+msgid "Low"
+msgstr "Niedrig"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:937
+msgctxt "Meazure setting label"
+msgid "Medium"
+msgstr "Mittel"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:942
+msgctxt "Meazure setting label"
+msgid "High"
+msgstr "Hoch"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:950
+msgctxt "Meazure setting label"
+msgid "Allowed URLs"
+msgstr "Erlaubte URLs"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:952
+msgctxt "Meazure setting label"
+msgid ""
+"Choose which URLs are allowed. Type an URL and press \"enter\" to allow it."
+msgstr ""
+"Wählen Sie die erlaubten URLs aus. Tippen Sie dazu eine URL und drücken dann "
+"\"Enter\"."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:957
+msgctxt "Meazure setting label"
+msgid "Add URL"
+msgstr "URL hinzufügen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:969
+msgid "Only valid URLs are accepted."
+msgstr "Nur gültige URLs sind erlaubt."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:995
+msgctxt "Meazure setting label"
+msgid "Allowed resources"
+msgstr "Erlaubte Ressourcen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1003
+msgctxt "Meazure setting label"
+msgid "All websites"
+msgstr "Alle Websites"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1008
+msgctxt "Meazure setting label"
+msgid "Approved website"
+msgstr "Genehmigte Websites"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1013
+msgctxt "Meazure setting label"
+msgid "Bathroom breaks"
+msgstr "WC-Pause"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1018
+msgctxt "Meazure setting label"
+msgid "Computer's calculator"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1023
+msgctxt "Meazure setting label"
+msgid "Course website"
+msgstr "Kurs Website"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1028
+msgctxt "Meazure setting label"
+msgid "Ebook (computer)"
+msgstr "Ebook (PC)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1033
+msgctxt "Meazure setting label"
+msgid "Ebook (website)"
+msgstr "Ebook (Website)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1038
+msgctxt "Meazure setting label"
+msgid "Excel"
+msgstr "Excel"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1043
+msgctxt "Meazure setting label"
+msgid "Notes (Excel)"
+msgstr "Notizen (Excel)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1048
+msgctxt "Meazure setting label"
+msgid "Financial calculator"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1053
+msgctxt "Meazure setting label"
+msgid "Formula sheet"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1058
+msgctxt "Meazure setting label"
+msgid "Four function calculator"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1063
+msgctxt "Meazure setting label"
+msgid "Graphing calculator"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1068
+msgctxt "Meazure setting label"
+msgid "Handwritten notes"
+msgstr "Handgeschriebene Notizen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1073
+msgctxt "Meazure setting label"
+msgid "Note cards"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1078
+msgctxt "Meazure setting label"
+msgid "Notepad"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1083
+msgctxt "Meazure setting label"
+msgid "Online calculator"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1088
+msgctxt "Meazure setting label"
+msgid "Paint"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1093
+msgctxt "Meazure setting label"
+msgid "Notes (PDF)"
+msgstr "Notizen (PDF)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1098
+msgctxt "Meazure setting label"
+msgid "Powerpoint"
+msgstr "Powerpoint"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1103
+msgctxt "Meazure setting label"
+msgid "Notes (Powerpoint)"
+msgstr "Notizen (Powerpoint)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1108
+msgctxt "Meazure setting label"
+msgid "Printed notes"
+msgstr "Gedruckte Notizen"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1113
+msgctxt "Meazure setting label"
+msgid "Scientific calculator"
+msgstr "Wissenschaftlicher Taschenrechner"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1118
+msgctxt "Meazure setting label"
+msgid "Scratch paper (1 sheet)"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1123
+msgctxt "Meazure setting label"
+msgid "Scratch paper (2 sheets)"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1128
+msgctxt "Meazure setting label"
+msgid "Scratch paper (multiple sheets)"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1133
+msgctxt "Meazure setting label"
+msgid "SPSS"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1138
+msgctxt "Meazure setting label"
+msgid "Textbook"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1143
+msgctxt "Meazure setting label"
+msgid "Whiteboard"
+msgstr ""
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1148
+msgctxt "Meazure setting label"
+msgid "Word"
+msgstr "Word"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1153
+msgctxt "Meazure setting label"
+msgid "Notes (Word)"
+msgstr "Notizen (Word)"
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1225
+msgid "Invalid options were removed."
+msgstr "Ungültige Optionen wurden entfernt."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1270
+msgid "bizExaminer only works with registered users."
+msgstr ""
+"bizExaminer funktioniert nur mit registrierten/eingeloggten NutzerInnen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1280
+msgid "Passing score is configured via bizExaminer."
+msgstr "Die Mindestpunktezahl wird in bizExaminer konfiguriert."
+
+#. translators: placeholder: quiz label
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1290
+msgid ""
+"bizExaminer allows the user to resume the %1$s/exam when\n"
+"                                    he opens the %1$s page while an attempt "
+"is still running."
+msgstr ""
+"bizExaminer erlaubt dem/der NutzerIn das Fortsetzen eines %1$s, wenn er/sie "
+"die %1$s-Seite öffnet während noch ein Antritt läuft."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1301
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1309
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1319
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1327
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1335
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1343
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1351
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1359
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1369
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1377
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1385
+msgid "Not compatible with bizExaminer."
+msgstr "Nicht kompatibel mit bizExaminer."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1395
+msgid ""
+"Not compatible with bizExaminer.\n"
+"                                    Please use other plugins which hook into "
+"learndash_quiz_completed."
+msgstr ""
+"Nicht kompatibel mit bizExaminer.\n"
+"                                    Bitte verwende andere Plugins die den "
+"Action-Hook learndash_quiz_completed nutzen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1417
+msgid "You have chosen to use bizExaminer certificates."
+msgstr "Sie haben die Verwendung von bizExaminer Zertifikaten aktiviert."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1475
+msgid ""
+"No exam modules found. Please make sure you have created exams in "
+"bizExaminer.\n"
+"                            Also make sure your API credentials are correct "
+"- you can test them at the options screen."
+msgstr ""
+"Keine Exam Module gefunden. Bitte stellen Sie sicher, dass ein Exam in "
+"bizExaminer angelegt ist.\n"
+"                            Überprüfen Sie bitte auch die API Zugangsdaten - "
+"Sie können diese in den Einstellungen testen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1484
+msgid ""
+"Error retrieving exam modules. Please make sure your API credentials are "
+"correct -\n"
+"                        you can test them at the options screen."
+msgstr ""
+"Fehler beim Laden der Exam Module. Überprüfen Sie bitte auch die API "
+"Zugangsdaten - Sie können diese in den Einstellungen testen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1503
+msgid ""
+"No remote proctors found. Please make sure you have configured remote "
+"proctor accounts.\n"
+"                            Also make sure your API credentials are correct "
+"- you can test them at the options screen."
+msgstr ""
+"Keine Remote Proctoring Services gefunden. Bitte stellen Sie sicher, dass "
+"Remote Proctor Accounts angelegt sind.\n"
+"Überprüfen Sie bitte auch die API Zugangsdaten - Sie können diese in den "
+"Einstellungen testen."
+
+#: lib/LearnDash/Quiz/QuizSettings/MetaBoxHelper.php:1512
+msgid ""
+"Error retrieving remote proctors. Please make sure your API credentials are "
+"correct -\n"
+"                        you can test them at the options screen."
+msgstr ""
+"Fehler beim Laden der Remote Proctoring Accounts. Überprüfen Sie bitte die "
+"API Zugangsdaten - Sie können diese in den Einstellungen testen."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:48
+msgid "API Settings"
+msgstr "bizExaminer API Einstellungen"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:51
+msgid "Configure API credentials to connect with bizExaminer"
+msgstr "API Zugangsdaten für bizExaminer konfigurieren"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:95
+msgctxt "new api credentials name"
+msgid "New API Credentials"
+msgstr "Neue API Zugangsdaten"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:129
+msgid "Name"
+msgstr "Name"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:131
+#: templates/admin/learndash/settings/apicredentials-section.php:42
+msgid ""
+"The name of this credentials set (only used internally for better "
+"organisation)."
+msgstr ""
+"Der Name des Zugangsdaten-Sets wird nur intern zur leichteren Auswahl "
+"verwendet."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:143
+msgid "Instance Domain"
+msgstr "Instanz Domain"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:145
+#: templates/admin/learndash/settings/apicredentials-section.php:62
+msgid ""
+"The domain name of your bizExaminer instance (without https:// or path)."
+msgstr "Der Domainname Ihrer bizExaminer Instanz (ohne https:// oder Pfad)."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:157
+msgid "API Key Owner"
+msgstr "API Schlüssel Owner"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:159
+#: templates/admin/learndash/settings/apicredentials-section.php:82
+msgid "The API key for the (content) owner."
+msgstr "Der API Schlüssel für den Owner."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:168
+msgid "API Key Organisation"
+msgstr "API Schlüssel Organisation"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:170
+#: templates/admin/learndash/settings/apicredentials-section.php:106
+msgid "The API key for the organisation."
+msgstr "Der API Schlüssel für die Organisation."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:181
+#: templates/admin/learndash/settings/apicredentials-section.php:131
+msgid "Actions for this API credentials set."
+msgstr "Aktionen für dieses Zugangsdaten-Set."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:189
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:206
+msgctxt "delete API credentials set"
+msgid "Delete"
+msgstr "Löschen"
+
+#. translators: api credentials row index number
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:195
+msgctxt "delete API credentials set button aria label"
+msgid "Delete API credentials set %s."
+msgstr "Lösche API Zugangsdaten-Set %s."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:201
+msgctxt "api credentials delete label prefix"
+msgid "&nbsp;"
+msgstr "Dieses API Zugangsdaten-Set"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:212
+msgctxt "api credentials delete label suffix"
+msgid "&nbsp;this API credentials set."
+msgstr "&nbsp;"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:221
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:239
+msgctxt "test API credentials set"
+msgid "Test"
+msgstr "Testen"
+
+#. translators: api credentials row index number
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:227
+msgctxt "test API credentials set button aria label"
+msgid "Test API credentials set %s."
+msgstr "Teste API Zugangsdaten-Set %s."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:233
+msgctxt "api credentials test label prefix"
+msgid "&nbsp;"
+msgstr "Dieses API Zugangsdaten-Set"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:241
+msgctxt "api credentials test label suffix"
+msgid "&nbsp;this API credentials set."
+msgstr "&nbsp;"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:257
+msgid "API Credentials cannot be deleted, if they are still used in quizzes"
+msgstr ""
+"API Zugangsdaten können nicht gelöscht werden, wenn sie noch in einem Quiz "
+"verwendet werden"
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:479
+msgid ""
+"Testing the API credentials was not successful. Please check them again."
+msgstr ""
+"Testen der API Zugangsdaten war fehlerhaft. Bitte überprüfen Sie die "
+"Zugangsdaten."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:488
+msgid "Testing the API credentials was successful."
+msgstr "Testen der API Zugangsdaten war erfolgreich."
+
+#: lib/LearnDash/Settings/ApiCredentialsSection.php:500
+msgid ""
+"The API credentials you entered are empty,\n"
+"                            not valid or contain non-valid characters. "
+"Please check them again."
+msgstr ""
+"Die eingegebenen API Zugangsdaten sind leer, ungültig oder beinhalten "
+"ungültige Zeichen. Bitte überprüfen Sie sie erneut."
+
+#: lib/LearnDash/Settings/OtherSettingsSection.php:36
+msgid "Other Settings"
+msgstr "Andere Einstellungen"
+
+#: lib/LearnDash/Settings/SettingsPage.php:29
+#: lib/LearnDash/Settings/SettingsPage.php:34
+msgctxt "settings page title"
+msgid "bizExaminer"
+msgstr ""
+
+#: lib/LearnDash/Settings/SupportSection.php:38
+#: lib/LearnDash/Settings/SupportSectionHelper.php:79
+#: lib/LearnDash/Settings/SupportSectionHelper.php:84
+msgctxt "support screen data heading"
+msgid "bizExaminer Data"
+msgstr "bizExaminer Daten"
+
+#: lib/LearnDash/Settings/SupportSectionHelper.php:166
+msgid "Please set a valid ISO timezone in your WordPress settings"
+msgstr ""
+"Bitte verwenden Sie eine gültige ISO Zeitzone in den WordPress Einstellungen."
+
+#: lib/LearnDash/Settings/SupportSectionHelper.php:215
+msgid "Download log file"
+msgstr ""
+
+#: lib/LearnDash/Shortcodes.php:82 lib/LearnDash/Shortcodes.php:154
+msgctxt "import quiz attempts button label"
+msgid "Import"
+msgstr "Importieren"
+
+#: lib/LearnDash/Shortcodes.php:155
+msgctxt "import quiz attempts no found"
+msgid "Nothing to import"
+msgstr "Nichts zu importieren"
+
+#. translators: %s is replaced with the minimum required LearnDash version
+#: lib/Plugin.php:163
+msgid ""
+"bizExaminer LearnDash Extension requires LearnDash.\n"
+"                    The plugin is not installed, activated or does not meet "
+"the required minimum version %s.\n"
+"                    Please check, install or update LearnDash."
+msgstr ""
+"Die bizExaminer LearnDash Erweiterung erfordert LearnDash.\n"
+"Das Plugin ist nicht installiert, aktiviert oder verwendet eine ältere "
+"Version als die erforderliche Mindestversion (%s).\n"
+"Bitte überprüfen, installieren oder updaten Sie LearnDash."
+
+#: templates/admin/learndash/settings/apicredentials-section.php:10
+msgid "API Credentials"
+msgstr "API Zugangsdaten"
+
+#. translators: placeholder: quiz label
+#: templates/admin/learndash/settings/apicredentials-section.php:14
+msgid ""
+"You can add multiple API credentials and choose which one to use for each %s "
+"you set up."
+msgstr ""
+"Sie können mehrere API Zugangsdaten anlegen und je %s auswählen, welche "
+"Zugangsdaten verwendet werden sollen."
+
+#: templates/admin/learndash/settings/apicredentials-section.php:27
+msgctxt "API Credentials table numbering header"
+msgid "Index"
+msgstr "Nummerierung"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:34
+msgctxt "API credentials set name label"
+msgid "Name"
+msgstr "Name"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:54
+msgctxt "API credentials set instance domain label"
+msgid "Instance Domain"
+msgstr "Instanz Domain"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:74
+msgctxt "API key owner label"
+msgid "API Key Owner"
+msgstr "API Schlüssel Owner"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:94
+msgctxt "API key organisation label"
+msgid "API Key Organisation"
+msgstr "API Schlüssel Organisation"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:116
+msgctxt "API key infos"
+msgid "Infos"
+msgstr "Infos"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:123
+msgctxt "API key actions label"
+msgid "Actions"
+msgstr "Aktionen"
+
+#. translators: followed by the row number
+#: templates/admin/learndash/settings/apicredentials-section.php:171
+msgctxt "api credentials set row screen reader label"
+msgid "API Credentials "
+msgstr "API Zugangsdaten "
+
+#: templates/admin/learndash/settings/apicredentials-section.php:179
+msgctxt "new api credentials set label"
+msgid "New"
+msgstr "Neue"
+
+#. translators: %1$s number of uses, %2$s quizzes post type label
+#: templates/admin/learndash/settings/apicredentials-section.php:251
+msgctxt "api credentials usage info"
+msgid "Used in %1$s %2$s"
+msgstr "Verwendet in %1$s %2$s"
+
+#. translators: %d is the row id (int or 'new')
+#: templates/admin/learndash/settings/apicredentials-section.php:271
+msgctxt "api credentials actions group label"
+msgid "Actions for API Credentials Set %s"
+msgstr "Aktionen für API Zugangsdaten-Set %s"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:316
+msgid "How to get your API credentials"
+msgstr "So finden Sie ihre API Zugangsdaten"
+
+#: templates/admin/learndash/settings/apicredentials-section.php:318
+msgid ""
+"Log into your bizExaminer instance as administrator and go to \"Settings\" "
+">\n"
+"                \"Owner\" / \"Organisation\" to copy your API credentials."
+msgstr ""
+"Loggen Sie sich in Ihre bizExaminer Instanz als Administrator ein und gehen "
+"Sie zu \"Einstellungen\" > \"Eigentümer\" / \"Organisation\" um die API "
+"Zugangsdaten zu kopieren."
+
+#: templates/admin/learndash/settings/apicredentials-section.php:325
+msgid ""
+"If you can not find these settings or do not have access to an administrator "
+"account,\n"
+"                please contact the bizExaminer support."
+msgstr ""
+"Wenn sie diese Einstellungen nicht finden können oder keinen Zugriff auf "
+"einen Administrator-Account haben, kontaktieren Sie bitte den bizExaminer "
+"Support."
+
+#: templates/learndash/shortcodes/import_attempts_button.php:4
+#: templates/learndash/shortcodes/import_attempts_table.php:32
+msgid "Import attempt from bizExaminer"
+msgstr "Antritt von bizExaminer importieren"
+
+#: src/settings/index.js:20
+msgid "Add API-Credentials"
+msgstr "API Zugangsdaten hinzufügen"
+
+#: src/settings/index.js:59
+msgid "Remove new credentials"
+msgstr "Neue API Zugangsdaten entfernen"
+
+#: src/settings/index.js:62
+msgid "Remove"
+msgstr "Entfernen"
+
+#~ msgid "No API Results to fetch."
+#~ msgstr "Keine API Ergebniss zum importieren."
+
+#~ msgctxt "Examus proctoring"
+#~ msgid "Online"
+#~ msgstr "Online"
+
+#~ msgctxt "Examus proctoring"
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgctxt "ProctorExam setting label"
+#~ msgid "Require mobile camera"
+#~ msgstr "Mobile Kamera verlangen"
+
+#~ msgctxt "Examus setting label"
+#~ msgid "Use Respondus LockDown Browser."
+#~ msgstr "Respondus LockDown Browser verwenden."
+
+#~ msgctxt "Proctorio setting label"
+#~ msgid "Record desktop"
+#~ msgstr "Desktop aufzeichnen"

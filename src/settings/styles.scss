@@ -1,0 +1,111 @@
+#settings_bizexaminer_api_credentials {
+    .bizexaminer-button-add {
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+
+    .col-index {
+        width: auto;
+        min-width: 1.875rem;
+    }
+
+    .col-infos {
+        width: auto;
+        min-width: 4.375rem;
+    }
+
+    .col-actions {
+        width: auto;
+        min-width: 5rem;
+    }
+
+    .col-name,
+    .col-api_key_instance,
+    .col-api_key_owner,
+    .col-api_key_organisation {
+        width: 20%; // fallback
+        // 11.25rem are the fixed values from .col-index, .col-infos, .col-actions
+        max-width: calc((100% - 11.25rem) / 4);
+    }
+
+    .col-actions {
+        .bizexaminer-actions-actions {
+            .js-bizexaminer-action-button {
+                display: none; // no-js fallback to checkboxes
+            }
+            p {
+                margin-bottom: 0;
+            }
+
+            &.buttons-enabled {
+                .js-bizexaminer-action-button {
+                    display: initial;
+                    margin: 0.25rem;
+                }
+                .learndash-section-field-checkbox-p {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    thead th {
+        .col-header-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .sfwd_help_text_link {
+                width: auto;
+            }
+
+            .sfwd_help_text_div {
+                margin: 0;
+            }
+        }
+    }
+
+    #bizexaminer-api-credentials-new {
+        .col-infos .col-infos__uses,
+        .col-actions .bizexaminer-actions-actions {
+            display: none;
+        }
+    }
+
+    .bizexaminer-api-row {
+        &.has-error,
+        &.has-success {
+            position: relative;
+            .sfwd_option_div {
+                padding-bottom: 1.5rem;
+                span.success,
+                span.error {
+                    position: absolute;
+                    bottom: 0.5rem;
+                }
+            }
+        }
+        // copied from .sfwd_input.learndash-settings-field-error
+        &.has-error {
+            background-color: #ffdfe0;
+            border-bottom: 1px solid #c89797;
+            border-top: 1px solid #c89797;
+
+            span.error {
+                color: inherit;
+            }
+        }
+
+        &.has-success {
+            background-color: #b6eec4;
+            border-bottom: 1px solid #b6eec4;
+            border-top: 1px solid #b6eec4;
+
+            span.success {
+                color: inherit;
+            }
+        }
+    }
+}

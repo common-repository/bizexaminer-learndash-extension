@@ -1,0 +1,63 @@
+{
+    "name": "bizexaminer/learndash-extension",
+    "description": "An extension for WP LearnDash to connect with bizExaminer",
+    "type": "wordpress-plugin",
+    "license": "GPLv3 or later",
+    "autoload": {
+        "psr-4": {
+            "BizExaminer\\LearnDashExtension\\Tests\\": "tests/",
+            "BizExaminer\\LearnDashExtension\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabian Todt",
+            "email": "mail@fabiantodt.at"
+        }
+    ],
+    "require": {
+        "league/container": "^4.2"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0.0",
+        "phpstan/phpstan": "^1.10",
+        "szepeviktor/phpstan-wordpress": "^1.3",
+        "coenjacobs/mozart": "^0.7.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "vendor/bin/phpcs -s",
+        "phpcs:fix": "vendor/bin/phpcbf",
+        "phpstan": "vendor/bin/phpstan analyze",
+        "lint": "find . -name '*.php' -not -path './vendor/*' -exec php -l '{}' \\;",
+        "build-zip": [
+            "../bin/build.sh $(dirname $PWD) $(dirname $PWD)/build",
+            "../bin/generate-zip.sh $(dirname $PWD)/build $(dirname $PWD)"
+        ],
+        "post-install-cmd": [
+            "\"$MOZART_BIN\" compose",
+            "composer dump-autoload"
+        ],
+        "post-update-cmd": [
+            "\"$MOZART_BIN\" compose",
+            "composer dump-autoload"
+        ]
+    },
+    "extra": {
+        "mozart": {
+            "dep_namespace": "BizExaminer\\LearnDashExtension\\Vendor\\",
+            "dep_directory": "/lib/Vendor/",
+            "classmap_directory": "/classes/vendor/",
+            "classmap_prefix": "BELD_",
+            "packages": [
+                "league/container",
+                "psr/container"
+            ],
+            "delete_vendor_directories": true
+        }
+    }
+}
