@@ -17,7 +17,7 @@ class Plugin
      *
      * @var string
      */
-    public const VERSION = '1.5.1';
+    public const VERSION = '1.5.2';
 
     /**
      * Store one "main" instance as a kind of singleton

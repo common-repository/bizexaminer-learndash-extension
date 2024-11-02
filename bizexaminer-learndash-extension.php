@@ -5,13 +5,13 @@
  * Plugin Name: bizExaminer LearnDash Extension
  * Plugin URI: https://www.bizexaminer.com/
  * Description: An extension for LearnDash to connect with bizExaminer
- * Version: 1.5.1
+ * Version: 1.5.2
  *
  * Requires at least: 6.0
  * Requires PHP: 7.4
  *
  * LearnDash requires at least: 4.3
- * LearnDash tested up to: 4.15.2
+ * LearnDash tested up to: 4.18.0.1
  *
  * Author: bizDevelop
  * Text Domain: bizexaminer-learndash-extension

@@ -2,9 +2,9 @@
 Contributors: bizexaminer, gaambo
 Tags: LearnDash, LMS, Exams
 Requires at least: 6.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,7 +13,7 @@ Our LearnDash extension allows you to connect quizzes with bizExaminer exams.
 
 == Description ==
 **Important: This plugin requires PHP 7.4 or higher and LearnDash 4.3 or higher.**
-Tested up to Learndash 4.15.2 (without new [experimental in-progress features and experiments of LearnDash](https://developers.learndash.com/constant/learndash_enable_in_progress_features/)).
+Tested up to Learndash 4.18.0.1 (without new [experimental in-progress features and experiments of LearnDash](https://developers.learndash.com/constant/learndash_enable_in_progress_features/)).
 
 bizExaminer is a complete and stable solution for stress-free examination.
 
@@ -118,6 +118,9 @@ Bug reports may be filed via our WordPress support forum. If you have found secu
 6. Users can see their results directly in LearnDash.
 
 == Changelog ==
+
+= 1.5.2 (2024-10-31) =
+- Compatibility: Tested with LearnDash 4.18.0.1 and WordPress 6.7
 
 = 1.5.1 (2024-07-10) =
 - Fix: Only show active/bookable exam modules in quiz settings
